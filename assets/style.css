@@ -1,1 +1,22 @@
- 
+﻿:root {
+	--grayish-blue: rgb(19, 54, 151);
+}
+
+body{
+    
+}
+
+header{
+    background-color: var(--grayish-blue);
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+nav a{
+    padding: 2%;
+
+}
+
