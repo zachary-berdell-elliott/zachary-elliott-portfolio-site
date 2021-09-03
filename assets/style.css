@@ -3,6 +3,7 @@
     --dark-border-color: rgb(13, 1, 20);
     --bright-grey: rgb(200,200,200);
     --link-hover-color: rgba(166, 226, 1, 0.45);
+    --name-border-sides: 3%;
 }
 
 body{
@@ -10,17 +11,21 @@ body{
 }
 
 header{
+    display: flex;
     background-color: var(--grayish-blue);
-    border-radius: 2rem 2rem 0rem 0rem;
 }
 
 h1{
     font-size:300%;
-    margin: 2% 3%;
+    color: var(--grayish-blue);
+    background-color: var(--bright-grey);
+    padding: 0rem  var(--name-border-sides);
+    border-style: none;
+    border-width: var(--name-border-sides)
 }
 
 nav {
-    display: flex;
+    align-content: flex-end;
     justify-content: end;
     margin: 2.5%;
 }
@@ -28,7 +33,7 @@ nav {
 nav a{
     padding: 1%;
     border-bottom: solid var(--dark-border-color) .5em;
-    color: wheat;
+    color: var(--bright-grey);
     text-shadow: rgba(rgba(100, 134, 93, 0.247), green, blue, alpha) 5px 10px;
     font-size: 150%;
     margin: 0% 2% 1% 0%;
@@ -36,6 +41,5 @@ nav a{
 }
 
 nav a:hover{
-    padding: 1.25%;
     background-color: var(--link-hover-color);
 }
