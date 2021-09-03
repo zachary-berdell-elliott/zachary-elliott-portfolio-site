@@ -25,9 +25,8 @@ h1{
 }
 
 nav {
-    align-content: flex-end;
-    justify-content: end;
-    margin: 2.5%;
+    display: flex;
+    align-items: center;
 }
 
 nav a{
