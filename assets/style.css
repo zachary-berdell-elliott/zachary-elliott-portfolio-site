@@ -4,6 +4,7 @@
     --bright-grey: rgb(200,200,200);
     --link-hover-color: rgba(166, 226, 1, 0.45);
     --name-border-sides: 3%;
+    --site-content-margin: .5%;
 }
 
 body{
@@ -13,6 +14,8 @@ body{
 header{
     display: flex;
     background-color: var(--grayish-blue);
+
+
 }
 
 h1{
@@ -25,19 +28,21 @@ h1{
 }
 
 nav {
-    display: inline-flex;
-    float: right;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
     align-content: center;
 }
 
 nav a{
-    padding: 1%;
-    border-bottom: solid var(--dark-border-color) .5em;
+    padding: 2%;
+    border-bottom: solid var(--bright-grey) .25em;
     color: var(--bright-grey);
-    text-shadow: rgba(rgba(100, 134, 93, 0.247), green, blue, alpha) 5px 10px;
     font-size: 150%;
-    margin: 0% 2% 1% 0%;
+    margin: 0% 10% .5% 0%;
     text-decoration: none;
+    display: flex;
+    align-content: center;
 }
 
 nav a:hover{
@@ -45,16 +50,23 @@ nav a:hover{
 }
 
 .display-sections {
-    display: inline;
+    display: flex;
 }
 
 .section-head {
     display: flex;
     border-right: solid var(--dark-border-color);
-    border-right-width: 16%;
+    border-width: 16%;
     padding-right: 5%;
+    font-size: 200%;
 }
 
 #about-me-text {
-    
+    font-size: 1.25rem;
+    margin-left: var(--site-content-margin);
+    margin-right: 20%;
+}
+
+#contact-info {
+    list-style: none;
 }
