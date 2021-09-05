@@ -14,8 +14,6 @@ body{
 header{
     display: flex;
     background-color: var(--grayish-blue);
-
-
 }
 
 h1{
@@ -30,8 +28,8 @@ h1{
 nav {
     margin-left: auto;
     display: flex;
-    justify-content: flex-end;
-    align-content: center;
+    justify-content: end;
+    align-content: center; 
 }
 
 nav a{
@@ -39,10 +37,10 @@ nav a{
     border-bottom: solid var(--bright-grey) .25em;
     color: var(--bright-grey);
     font-size: 150%;
-    margin: 0% 10% .5% 0%;
+    margin: 3% 10% .5% 0%;
     text-decoration: none;
-    display: flex;
-    align-content: center;
+   /* display: flex;
+    align-content: center;*/
 }
 
 nav a:hover{
@@ -59,6 +57,7 @@ nav a:hover{
     border-width: 16%;
     padding-right: 5%;
     font-size: 200%;
+	margin-right: 2%;
 }
 
 #about-me-text {
@@ -69,4 +68,6 @@ nav a:hover{
 
 #contact-info {
     list-style: none;
+	display:flex;
+	justify-content: space-evenly;
 }
