@@ -54,10 +54,10 @@ nav a:hover{
 .section-head {
     display: flex;
     border-right: solid var(--dark-border-color);
-    border-width: 16%;
-    padding-right: 5%;
+   /* border-width: 16%; */
+    padding-right: .5%;
     font-size: 200%;
-	margin-right: 2%;
+	margin-left: 5%;
 }
 
 #about-me-text {
@@ -70,4 +70,16 @@ nav a:hover{
     list-style: none;
 	display:flex;
 	justify-content: space-evenly;
+}
+
+#contact-head {
+    padding-left: 0%;
+}
+
+#projects-head {
+   padding-left: 3%;
+}
+
+#about-head {
+
 }
