@@ -2,6 +2,7 @@
 	--grayish-blue: rgb(35, 41, 59);
     --dark-border-color: rgb(13, 1, 20);
     --bright-grey: rgb(200,200,200);
+    --section-header-color: rgb(28, 18, 36);
     --link-hover-color: rgba(166, 226, 1, 0.45);
     --name-border-sides: 3%;
     --site-content-margin: .5%;
@@ -22,7 +23,8 @@ h1{
     background-color: var(--bright-grey);
     padding: 0rem  var(--name-border-sides);
     border-style: none;
-    border-width: var(--name-border-sides)
+    border-width: var(--name-border-sides);
+    font-family:  ;
 }
 
 nav {
@@ -47,6 +49,10 @@ nav a:hover{
     background-color: var(--link-hover-color);
 }
 
+#site-Image{
+    padding: 1rem 1rem;
+}
+
 .display-sections {
     display: flex;
 }
@@ -56,6 +62,7 @@ nav a:hover{
     border-right: solid var(--dark-border-color);
    /* border-width: 16%; */
     padding-right: .5%;
+    color: var(--section-header-color);
     font-size: 200%;
 	margin-left: 5%;
 }
@@ -64,16 +71,24 @@ nav a:hover{
     font-size: 1.25rem;
     margin-left: var(--site-content-margin);
     margin-right: 20%;
+    color: black;
+    margin-left
 }
 
 #contact-info {
     list-style: none;
 	display:flex;
-	justify-content: space-evenly;
+	justify-content: center;
+    margin-top: 1%;
+    font-size: 115%;
+}
+
+#contact-info ul {
+    border-bottom: solid;
 }
 
 #contact-head {
-    padding-left: 0%;
+    margin-left: 5%;
 }
 
 #projects-head {
@@ -81,5 +96,36 @@ nav a:hover{
 }
 
 #about-head {
+    padding-left: 5%;
+}
 
+@media screen and (max-width: 1192) {
+
+    header{
+        display: inline;
+    }
+    h1{
+        font-size:300%;
+        margin: 2% var(--name-margin-sides);
+        color: var(--grayish-blue);
+        background-color: var(--bright-grey);
+        padding: 0rem  var(--name-margin-sides);
+    }
+    
+    nav {
+        display: flex;
+        justify-content: end;
+        margin: 2.5%;
+    }
+    
+    nav a{
+        padding: 1%;
+        border-bottom: solid var(--dark-border-color) .5em;
+        color: var(--bright-grey);
+        text-shadow: rgba(rgba(100, 134, 93, 0.247), green, blue, alpha) 5px 10px;
+        font-size: 150%;
+        margin: 0% 2% 1% 0%;
+        text-decoration: none;
+    }
+    
 }
