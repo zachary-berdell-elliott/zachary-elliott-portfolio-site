@@ -2,7 +2,7 @@
 	--grayish-blue: rgb(35, 41, 59);
     --dark-border-color: rgb(13, 1, 20);
     --bright-grey: rgb(200,200,200);
-    --section-header-color: rgb(28, 18, 36);
+    --section-header-color: rgb(41, 17, 61);
     --link-hover-color: rgba(166, 226, 1, 0.45);
     --name-border-sides: 3%;
     --site-content-margin: .5%;
@@ -18,7 +18,7 @@ header{
 }
 
 h1{
-    font-size:300%;
+    font-size: 300%;
     color: var(--grayish-blue);
     background-color: var(--bright-grey);
     padding: 0rem  var(--name-border-sides);
@@ -75,6 +75,18 @@ nav a:hover{
     margin-left
 }
 
+.project-display {
+    background-image: url('./images/coming-soon-small.png');
+
+}
+
+#main-project {
+    background-image: url('./images/coming-soon-large.png')
+}
+
+.display-lable {
+    background-color: var(--bright-grey);
+}
 #contact-info {
     list-style: none;
 	display:flex;
@@ -85,6 +97,7 @@ nav a:hover{
 
 #contact-info ul {
     border-bottom: solid;
+    text-decoration: none;
 }
 
 #contact-head {
@@ -102,7 +115,7 @@ nav a:hover{
 @media screen and (max-width: 1192) {
 
     header{
-        display: inline;
+        display: block;
     }
     h1{
         font-size:300%;
@@ -118,7 +131,7 @@ nav a:hover{
         margin: 2.5%;
     }
     
-    nav a{
+    nav a {
         padding: 1%;
         border-bottom: solid var(--dark-border-color) .5em;
         color: var(--bright-grey);
