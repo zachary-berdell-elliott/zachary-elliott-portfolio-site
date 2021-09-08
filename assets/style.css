@@ -13,10 +13,14 @@ body{
     text-decoration: none;
 }
 
+/* The code for the header is below it uses the flex display property and one of the global color styles. */
+
 header{
     display: flex;
     background-color: var(--grayish-blue);
 }
+
+/* The h1 tag is syled to have the color of the background for the text and another global color. It uses padding and borders for alignment. */
 
 h1{
     font-size: 300%;
@@ -27,6 +31,8 @@ h1{
     border-width: var(--name-border-sides);
     font-family:  ;
 }
+
+/* The nav content is aligned to the right of the page and uses the flex display property along with the auto margin to accomplish it's alignment. */
 
 nav {
     margin-left: auto;
@@ -44,13 +50,18 @@ nav a{
     text-decoration: none;
 }
 
+/* Adds a transparent color over the link tags in the nav section when they are hovered over */
+
 nav a:hover {
     background-color: var(--link-hover-color);
 }
 
 #site-Image{
-    padding: 1rem 1rem;
+    padding: 100% 20%;
+    background-image: url('./images/top-background.jpg')
 }
+
+/* Sets the display property of the sections to flex so the content can float properly. */
 
 .display-sections {
     display: flex;
@@ -81,11 +92,10 @@ nav a:hover {
 
 .project-display {
     background-image: url('./images/coming-soon-small.png');
-    padding: 67.5% 228%;
+    padding:  2.7rem 9.12rem;
     border-style: solid;
     border-color: var(--bright-grey);
     border-width: 16%;
-    display: flex;
 }
 
 #main-project {
@@ -93,8 +103,21 @@ nav a:hover {
     padding: 10.8rem 19.2rem;
 }
 
+#small-project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#small-project-container .project-display {
+    display: inline;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
 .display-lable {
     background-color: var(--bright-grey);
+    margin-top: auto;
 }
 
 .project-display:hover{
