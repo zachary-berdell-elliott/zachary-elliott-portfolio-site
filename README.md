@@ -1,5 +1,5 @@
 # Zachary Elliott Portfolio
-This site is a portfolio for me. It showcases my projects, provides contact information, provides a description about me, and has a link to my resume. The site can be accessed ![here.](https://zachary-berdell-elliott.github.io/zachary-elliott-portfolio-site/)
+This site is a portfolio for me. It showcases my projects, provides contact information, provides a description about me, and has a link to my resume. The site can be accessed [here.](https://zachary-berdell-elliott.github.io/zachary-elliott-portfolio-site/)
 ![Picture of the top of the website]()
 
 ## Navigation
