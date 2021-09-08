@@ -75,29 +75,41 @@ nav a:hover {
     margin-left
 }
 
+#projects{
+    text-decoration: none;
+}
+
 .project-display {
     background-image: url('./images/coming-soon-small.png');
-    padding: 228% 67.5%;
+    padding: 67.5% 228%;
     border-style: solid;
+    border-color: var(--bright-grey);
+    border-width: 16%;
+    display: flex;
 }
 
 #main-project {
-    background-image: url('./images/coming-soon-large.png')
-    padding: 480% 270%;
+    background-image: url('./images/coming-soon-large.png');
+    padding: 10.8rem 19.2rem;
 }
 
 .display-lable {
     background-color: var(--bright-grey);
 }
+
+.project-display:hover{
+    background-color: var(--link-hover-color);
+}
+
 #contact-info {
     list-style: none;
 	display:flex;
-	justify-content: center;
+	justify-content: space-evenly;
     margin-top: 1%;
     font-size: 115%;
 }
 
-#contact-info ul {
+#contact-info li {
     border-bottom: solid;
     text-decoration: none;
 }
@@ -113,8 +125,8 @@ nav a:hover {
 #about-head {
     padding-left: 5%;
 }
-/*
-@media screen and (max-width: 1192) {
+
+@media (max-width: 1192) {
 
     header{
         display: block;
@@ -144,4 +156,3 @@ nav a:hover {
     }
     
 }
-*/
