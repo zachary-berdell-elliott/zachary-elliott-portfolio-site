@@ -54,6 +54,9 @@ nav a:hover {
 
 .display-sections {
     display: flex;
+    flex-direction: row;
+   /* flex-wrap: wrap;
+    justify-content: space-between; */
 }
 
 .section-head {
@@ -81,20 +84,32 @@ nav a:hover {
 
 .project-display {
     background-image: url('./images/coming-soon-small.png');
-    padding: 67.5% 228%;
     border-style: solid;
     border-color: var(--bright-grey);
     border-width: 16%;
+    min-height: 20vh;
+    min-width: 32vw;
+    margin: 2vw 9vh 0vw 0vh;
+}
+
+.flex-container{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #main-project {
     background-image: url('./images/coming-soon-large.png');
     padding: 10.8rem 19.2rem;
+    min-height: 30vh;
+    min-width: 35vw;
 }
 
 .display-lable {
     background-color: var(--bright-grey);
+    width: 150px;
+    margin-top: 110px;
+    opacity: .5;
 }
 
 .project-display:hover{
@@ -112,6 +127,8 @@ nav a:hover {
 #contact-info li {
     border-bottom: solid;
     text-decoration: none;
+    margin-left: var(--site-content-margin);
+    margin-right: 10%;
 }
 
 #contact-head {
