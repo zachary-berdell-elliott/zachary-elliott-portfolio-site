@@ -35,6 +35,10 @@ nav {
     align-content: center; 
 }
 
+a {
+    text-decoration: none;
+}
+
 nav a{
     padding: 2%;
     border-bottom: solid var(--bright-grey) .25em;
@@ -44,19 +48,19 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover {
+a:hover {
     background-color: var(--link-hover-color);
 }
 
 #site-Image{
-    padding: 1rem 1rem;
+    width: 100vw;
+    height: 20vh;
+    background-image: url('./images/top-background.jpg');
 }
 
 .display-sections {
     display: flex;
     flex-direction: row;
-   /* flex-wrap: wrap;
-    justify-content: space-between; */
 }
 
 .section-head {
@@ -143,33 +147,20 @@ nav a:hover {
     padding-left: 5%;
 }
 
-@media (max-width: 1192) {
+@media (max-width: 1192px) {
 
     header{
         display: block;
+        max-width: 100vw;
     }
     h1{
-        font-size:300%;
-        margin: 2% var(--name-margin-sides);
-        color: var(--grayish-blue);
-        background-color: var(--bright-grey);
-        padding: 0rem  var(--name-margin-sides);
+        text-align: center;
     }
     
     nav {
         display: flex;
         justify-content: end;
         margin: 2.5%;
-    }
-    
-    nav a {
-        padding: 1%;
-        border-bottom: solid var(--dark-border-color) .5em;
-        color: var(--bright-grey);
-        text-shadow: rgba(rgba(100, 134, 93, 0.247), green, blue, alpha) 5px 10px;
-        font-size: 150%;
-        margin: 0% 2% 1% 0%;
-        text-decoration: none;
     }
     
 }
