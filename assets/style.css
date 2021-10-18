@@ -199,6 +199,8 @@ a:hover {
     .section-head {
         border-right: none;
         border-bottom: solid;
+        justify-content: center;
+        font-size: 300%;
     }
     
 }
