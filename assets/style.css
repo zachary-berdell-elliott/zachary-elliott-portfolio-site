@@ -182,7 +182,6 @@ a:hover {
 
     .project-display{
         min-width: 70vw;
-
     }
 
     #contact-info {
@@ -191,6 +190,15 @@ a:hover {
 
     #about-me-text {
         margin-right: 10%;
+    }
+
+    .display-sections {
+        display: inline;
+    }
+
+    .section-head {
+        border-right: none;
+        border-bottom: solid;
     }
     
 }
