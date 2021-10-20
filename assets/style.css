@@ -6,7 +6,7 @@
     --link-hover-color: rgba(166, 226, 1, 0.45);
     --name-border-sides: 3%;
     --site-content-margin: .5%;
-    --big-display-width: 35vw;
+    --big-display-width: 70vw;
 }
 
 body{
@@ -125,16 +125,23 @@ a:hover {
 
 #main-project {
     background-image: url('./images/watchr-image.png');
-    padding: 10.8rem 19.2rem;
-    min-height: 30vh;
+    min-height: 55vh;
     min-width: var(--big-display-width);
+    border-style: solid;
+    border-color: var(--bright-grey);
+    border-width: 16%;
+    margin: 2vw 9vh 0vw 0vh;
+    display: flex;
 }
 
-#main-project .display-lable {
-    margin-left: -46%;
-    margin-right: auto;
-    margin-top: 200px;
-    justify-content: flex-start;
+.main-lable {
+    margin-right: auto; 
+    margin-top: 300px;
+    justify-content: start;
+    width: 150px;
+    background-color: var(--bright-grey);
+    align-self: flex-start;
+
 }
 
 .display-lable {
@@ -151,9 +158,10 @@ a:hover {
 #contact-info {
     list-style: none;
 	display:flex;
-	justify-content: space-evenly;
+	justify-content: center;
     margin-top: 1%;
     font-size: 115%;
+    min-width: 80vw;
 }
 
 #contact-info li {
@@ -163,6 +171,7 @@ a:hover {
     margin-right: 10%;
     border-color: var(--section-header-color);
     color: black;
+    justify-content: space-evenly;
 }
 
 #contact-info li a {
@@ -201,10 +210,6 @@ a:hover {
 
     .project-display{
         min-width: 70vw;
-    }
-
-    #contact-info {
-        margin-left: 12%;
     }
 
     #about-me-text {
