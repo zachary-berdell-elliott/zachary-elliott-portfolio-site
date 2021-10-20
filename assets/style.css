@@ -110,6 +110,14 @@ a:hover {
     margin: 2vw 9vh 0vw 0vh;
 }
 
+#weather-link{
+    background-image: url('./images/weather-dashboard.png');
+}
+
+#planner-link{
+    background-image: url('./images/day-planner.png');
+}
+
 .flex-container{
     display: flex;
     justify-content: center;
@@ -117,7 +125,7 @@ a:hover {
 }
 
 #main-project {
-    background-image: url('./images/coming-soon-large.png');
+    background-image: url('./images/watchr-image.png');
     padding: 10.8rem 19.2rem;
     min-height: 30vh;
     min-width: var(--big-display-width);
