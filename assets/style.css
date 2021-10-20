@@ -1,4 +1,4 @@
-:root {
+﻿:root {
 	--grayish-blue: rgb(35, 41, 59);
     --dark-border-color: rgb(13, 1, 20);
     --bright-grey: rgb(200,200,200);
@@ -6,7 +6,7 @@
     --link-hover-color: rgba(166, 226, 1, 0.45);
     --name-border-sides: 3%;
     --site-content-margin: .5%;
-    --big-display-width: 70vw;
+    --big-display-width: 69vw;
 }
 
 body{
@@ -17,6 +17,7 @@ body{
 header{
     display: flex;
     background-color: var(--grayish-blue);
+    margin-bottom: 0vh;
 }
 
 h1{
@@ -57,6 +58,7 @@ a:hover {
    /* min-height: 20vh;*/
     background-image: url('./images/top-background.jpg');
     display: flex;
+    margin: 0%;
 }
 
 #site-image img {
@@ -109,6 +111,13 @@ a:hover {
     margin: 2vw 9vh 0vw 0vh;
 }
 
+.display-lable {
+    background-color: var(--bright-grey);
+    width: 150px;
+    margin-top: 100px;
+    color: var(--grayish-blue);
+}
+
 #weather-link{
     background-image: url('./images/weather-dashboard.png');
 }
@@ -125,30 +134,20 @@ a:hover {
 
 #main-project {
     background-image: url('./images/watchr-image.png');
-    min-height: 55vh;
+    min-height: 60vh;
     min-width: var(--big-display-width);
     border-style: solid;
     border-color: var(--bright-grey);
-    border-width: 16%;
-    margin: 2vw 9vh 0vw 0vh;
     display: flex;
 }
 
-.main-lable {
+#main-project .display-lable {
     margin-right: auto; 
     margin-top: 300px;
     justify-content: start;
-    width: 150px;
     background-color: var(--bright-grey);
     align-self: flex-start;
 
-}
-
-.display-lable {
-    background-color: var(--bright-grey);
-    width: 150px;
-    margin-top: 100px;
-    color: var(--grayish-blue);
 }
 
 .project-display:hover{
@@ -233,7 +232,6 @@ a:hover {
 
     .flex-container {
         justify-content: center;
-        margin-right: auto;
     }
     
 }
