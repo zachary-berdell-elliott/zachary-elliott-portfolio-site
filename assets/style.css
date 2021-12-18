@@ -6,7 +6,7 @@
     --link-hover-color: rgba(166, 226, 1, 0.45);
     --name-border-sides: 3%;
     --site-content-margin: .5%;
-    --big-display-width: 70vw;
+    --big-display-width: 69vw;
 }
 
 body{
@@ -17,6 +17,7 @@ body{
 header{
     display: flex;
     background-color: var(--grayish-blue);
+    margin-bottom: 0vh;
 }
 
 h1{
@@ -26,7 +27,6 @@ h1{
     padding: 0rem  var(--name-border-sides);
     border-style: none;
     border-width: var(--name-border-sides);
-    font-family:  ;
 }
 
 nav {
@@ -49,14 +49,11 @@ nav a{
     text-decoration: none;
 }
 
-a:hover {
-    background-color: var(--link-hover-color);
-}
-
 #site-image{
    /* min-height: 20vh;*/
     background-image: url('./images/top-background.jpg');
     display: flex;
+    margin: 0%;
 }
 
 #site-image img {
@@ -106,11 +103,21 @@ a:hover {
     border-width: 16%;
     min-height: 20vh;
     min-width: 32vw;
-    margin: 2vw 9vh 0vw 0vh;
+    margin: 2vw 9vh 0vw 0vh; 
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+.display-lable {
+    background-color: var(--bright-grey);
+    width: 20%;
+    margin-top: 10%;
+    color: var(--grayish-blue);
 }
 
 #weather-link{
     background-image: url('./images/weather-dashboard.png');
+    background-size: 135%;
 }
 
 #planner-link{
@@ -125,34 +132,22 @@ a:hover {
 
 #main-project {
     background-image: url('./images/watchr-image.png');
-    min-height: 55vh;
+    min-height: 60vh;
     min-width: var(--big-display-width);
     border-style: solid;
     border-color: var(--bright-grey);
-    border-width: 16%;
-    margin: 2vw 9vh 0vw 0vh;
     display: flex;
 }
 
-.main-lable {
+#main-project .display-lable {
     margin-right: auto; 
-    margin-top: 300px;
+    margin-top: 25%;
     justify-content: start;
-    width: 150px;
-    background-color: var(--bright-grey);
     align-self: flex-start;
-
 }
 
-.display-lable {
-    background-color: var(--bright-grey);
-    width: 150px;
-    margin-top: 100px;
-    color: var(--grayish-blue);
-}
-
-.project-display:hover{
-    background-color: var(--link-hover-color);
+a:hover {
+    background-color: var(--link-hover-color) !important;
 }
 
 #contact-info {
@@ -210,6 +205,13 @@ a:hover {
 
     .project-display{
         min-width: 70vw;
+        margin-right: 0vw;
+    }
+
+    #main-project{
+        background-size: 200%;
+        min-height: 40vh;
+        min-width: 80vw;
     }
 
     #about-me-text {
@@ -218,6 +220,7 @@ a:hover {
 
     .display-sections {
         display: inline;
+        text-align: center;
     }
 
     .section-head {
@@ -233,7 +236,10 @@ a:hover {
 
     .flex-container {
         justify-content: center;
-        margin-right: auto;
     }
     
+}
+
+@media (max-width: 800px){
+
 }
