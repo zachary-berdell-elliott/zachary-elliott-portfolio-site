@@ -130,7 +130,7 @@ nav a{
     flex-wrap: wrap;
 }
 
-#main-project {
+.main-project {
     background-image: url('./images/watchr-image.png');
     min-height: 60vh;
     min-width: var(--big-display-width);
@@ -139,7 +139,7 @@ nav a{
     display: flex;
 }
 
-#main-project .display-lable {
+.main-project .display-lable {
     margin-right: auto; 
     margin-top: 25%;
     justify-content: start;
@@ -185,6 +185,21 @@ a:hover {
     padding-left: 5%;
 }
 
+.project-info{
+    border-style: solid;
+    border-color: var(--bright-grey);
+    border-width: 16%;
+    min-height: 20vh;
+    min-width: 32vw;
+    margin: 2vw 9vh 0vw 0vh; 
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+.description-header{
+   display: flex; 
+} 
+
 @media (max-width: 1192px) {
 
     header{
@@ -208,7 +223,7 @@ a:hover {
         margin-right: 0vw;
     }
 
-    #main-project{
+    .main-project{
         background-size: 200%;
         min-height: 40vh;
         min-width: 80vw;
