@@ -1,4 +1,4 @@
-﻿:root {
+:root {
 	--grayish-blue: rgb(35, 41, 59);
     --dark-border-color: rgb(13, 1, 20);
     --bright-grey: rgb(200,200,200);
@@ -27,7 +27,6 @@ h1{
     padding: 0rem  var(--name-border-sides);
     border-style: none;
     border-width: var(--name-border-sides);
-    font-family:  ;
 }
 
 nav {
@@ -48,10 +47,6 @@ nav a{
     font-size: 150%;
     margin: 3% 10% .5% 0%;
     text-decoration: none;
-}
-
-a:hover {
-    background-color: var(--link-hover-color);
 }
 
 #site-image{
@@ -101,11 +96,6 @@ a:hover {
     text-decoration: none;
 }
 
-.project-display:hover{
-    background-color: var(--link-hover-color);
-}
-
-
 .project-display {
     background-image: url('./images/coming-soon-small.png');
     border-style: solid;
@@ -120,17 +110,30 @@ a:hover {
 
 .display-lable {
     background-color: var(--bright-grey);
-    width: 150px;
-    margin-top: 100px;
+    width: 10rem;
+    margin-top: 10%;
     color: var(--grayish-blue);
 }
 
 #weather-link{
     background-image: url('./images/weather-dashboard.png');
+    background-size: 135%;
 }
 
 #planner-link{
     background-image: url('./images/day-planner.png');
+}
+
+#tripshare-link{
+    background-image: url('./images/tripshare-image.png');
+}
+
+#employee-link {
+    background-image: url('./images/employee-tracker-image.png');
+}
+
+#ecommerce-link {
+    background-image: url('./images/ecommerce-image.png');
 }
 
 .flex-container{
@@ -139,7 +142,7 @@ a:hover {
     flex-wrap: wrap;
 }
 
-#main-project {
+.main-project {
     background-image: url('./images/watchr-image.png');
     min-height: 60vh;
     min-width: var(--big-display-width);
@@ -148,15 +151,16 @@ a:hover {
     display: flex;
 }
 
-#main-project .display-lable {
+.main-project .display-lable {
     margin-right: auto; 
     margin-top: 25%;
     justify-content: start;
-    background-color: var(--bright-grey);
     align-self: flex-start;
-
 }
 
+a:hover {
+    background-color: var(--link-hover-color) !important;
+}
 
 #contact-info {
     list-style: none;
@@ -193,6 +197,36 @@ a:hover {
     padding-left: 5%;
 }
 
+.project-info{
+    display: inline;
+    min-width: 32vw;
+    border-width: 16%;
+    min-height: 20vh;
+    min-width: 32vw;
+    margin: 2vw 9vh 0vw 0vh; 
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.description-header{
+   display: flex; 
+} 
+
+.slide-btn {
+    margin-left: auto;
+}
+
+.description-header h3 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label-color {
+    background-color: var(--bright-grey);
+    color: var(--dark-border-color);
+}
+
 @media (max-width: 1192px) {
 
     header{
@@ -216,7 +250,7 @@ a:hover {
         margin-right: 0vw;
     }
 
-    #main-project{
+    .main-project{
         background-size: 200%;
         min-height: 40vh;
         min-width: 80vw;
@@ -249,9 +283,5 @@ a:hover {
 }
 
 @media (max-width: 800px){
-    .project-display{
-    }
 
-    #main-project{
-    }
 }
