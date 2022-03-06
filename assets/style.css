@@ -1,4 +1,4 @@
-:root {
+﻿:root {
 	--grayish-blue: rgb(35, 41, 59);
     --dark-border-color: rgb(13, 1, 20);
     --bright-grey: rgb(200,200,200);
@@ -134,6 +134,18 @@ nav a{
 
 #ecommerce-link {
     background-image: url('./images/ecommerce-image.png');
+}
+
+#kintsugi-link {
+    background-image: url('./images/kintsugi.png');
+}
+
+#social-link {
+    background-image: url('./images/social-network-image.png');
+}
+
+#newsfeed-link {
+    background-image: url('./images/py-newsfeed.png');
 }
 
 .flex-container{
